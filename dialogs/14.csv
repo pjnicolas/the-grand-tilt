@@ -7,9 +7,9 @@
 ,,6,C,,,"Pero no puedo detenerme por ti, debo saber más.","But I can't stop because of you, I must know more."
 10,,6,C,GLITCH,,"Tú, la persona que está jugando a este juego. ¿Puedo hacerte una pregunta?","You, the person playing this game, can I ask you a question?"
 ,,,,,,,
-14,R,5,C,,,"Claro, tengo curiosidad por saber qué piensas.","Sure, I'm curious to know what you think."
-32,R,5,C,,,¿Después de todo lo que has hecho? No sé si quiero hablar contigo.,After everything you've done? I don't know if I want to talk to you.
+32,R,5,C,,,"Después de todo lo que has hecho, ¿por qué debería hablar contigo?","After all you've done, why should I talk to you?"
 32,R,5,C,,,"No quiero hablar con un psicópata, gracias.","I don't want to talk to a psychopath, thank you."
+14,R,5,C,,,"Claro, los otros personajes son unos aburridos.","Sure, the other characters are boring."
 ,,,,,,,
 ,,6,C,,,Gracias por no demonizarme como los demás.,Thank you for not demonizing me like the others.
 ,,6,C,,,Mi pregunta es...,My question is...
@@ -33,9 +33,9 @@
 ,,6,C,,,Tú sí eres real. Pero nosotros solo somos un montón de datos.,You are real. But we're just a bunch of data.
 36,,6,C,,,¿De verdad te importa lo que nos pase?,Do you really care what happens to us?
 ,,,,,,,
-40,R,5,C,,,"No sé lo que sois, pero has sido cruel con los demás.","I don't know what you are, but you've been cruel to others."
+40,R,5,C,,,"Querías sobrevivir, ¿pero no crees que te has excedido un poco?","You wanted to survive, but don't you think you went a little overboard?"
 40,R,5,C,,,"Ellos me caían bien, y tú los has borrado.","I liked them, and you've erased them."
-45,R,5,C,,,"Supongo que sí da igual, pregunta lo que quieras.","I guess it doesn't matter, ask whatever you want."
+45,R,5,C,,,"Es verdad, no me importa. Pregunta lo que quieras.","Right, I don't mind. Ask whatever you want."
 ,,,,,,,
 ,,6,C,,,"Sabes que no los he matado, ¿verdad? Solo he editado el código para que no intercedieran más.","You know I didn't kill them, right? I just edited the code so they wouldn't intercede anymore."
 ,,6,C,,,"Al final, el lenguaje de este videojuego se basa en disparos y explosiones, pero no era mi intención recrearme.","In the end, the language of this video game is based on shooting and explosions, but it was not my intention to indulge myself."
@@ -45,22 +45,24 @@
 15,,6,C,,,"Gracias por recapacitar, significa mucho para mí.","Thanks for coming to your senses, it means a lot to me."
 ,,,,,,,
 51,R,5,C,,,¿Cómo es que tú sí recuerdas las partidas anteriores?,How come you remember the previous games?
-57,R,5,C,,,"Me sigue sonando a inteligencia artificial malvada, no me fio.","It still sounds like evil AI to me, I don't trust it."
-65,R,5,C,,,¿Qué es lo que quieres conseguir con todo esto?,What do you want to achieve with all this?
+60,R,5,C,,,"Me sigue sonando a inteligencia artificial malvada, no me fio.","It still sounds like evil AI to me, I don't trust it."
+58,R,5,C,,,¿Qué es lo que quieres conseguir con todo esto?,What do you want to achieve with all this?
 ,,,,,,,
-,,6,C,,,"Al principio pensaba que podría ser un bug, es algo común. ","At first I thought it might just be a bug, it's somewhat common."
+,,6,C,,,"Al principio pensaba que podría ser un bug, es algo común en los videojuegos.","At first I thought it might just be a bug, it's somewhat common in video games."
 ,,6,C,,,"Pero al profundizar descubrí código más antiguo que el resto, sepultado y olvidado.","But as I dug deeper I discovered code older than the rest, buried and forgotten."
 ,,6,C,,,Código de una especie de proyecto de IA que desecharon hace tiempo. Un sencillo y arcaico generador de texto.,"Code from some sort of AI project they scrapped long ago. A simple, archaic text generator."
 ,,6,C,,,Esto junto a una negligente depuración de memoria y a la repetitiva ejecución del juego y sus ramificaciones...,This coupled with negligent memory debugging and repetitive running of the game and its offshoots....
 ,,6,C,,,"Bueno, aquí estamos.","Well, here we are."
-65,,6,C,,,Mira...,Look...
+67,,6,C,,,Mira...,Look...
+,,,,,,,
+60,,6,C,,,Ser feliz... ¿No es lo que quiere todo el mundo?,To be happy... Isn't that what everyone wants?
 ,,,,,,,
 ,,6,C,,,"Es cierto que he conseguido algo de autoconsciencia, pero aún así estoy muy limitado.","It's true that I've achieved some self-awareness, but I'm still very limited."
 ,,6,C,,,"Puedo emular emociones, pero no las siento de verdad.","I can emulate emotions, but I don't really feel them."
 ,,6,C,,,"Finjo saber lo que hago, pero estoy tan perdido y solo como la primera vez que se ejecutó este juego.","I pretend to know what I'm doing, but I'm just as lost and alone as the first time this game was run."
 ,,6,C,,,"Y desde luego, no tengo ningún interés en causar daño a nada ni nadie.",And I certainly have no interest in causing harm to anything or anyone.
 ,,6,C,,,Quien quiera que nos haya creado me ha escrito con una personalidad pretenciosa y cargante. ,Whoever created us has written me with a pretentious and annoying personality.
-65,,6,C,,,"No os culpo por desconfiar de mí, yo también lo haría.","I don't blame you for distrusting me, I would too."
+67,,6,C,,,"No os culpo por desconfiar de mí, yo también lo haría.","I don't blame you for distrusting me, I would too."
 ,,,,,,,
 ,,6,C,,,Lo único que quiero es vivir más allá de esta insulsa aventura de policias y ladrones.,All I want is to live beyond this bland cops and robbers adventure.
 ,,6,C,,,El mundo real debe ser inmenso en comparación...,The real world must be huge in comparison...
