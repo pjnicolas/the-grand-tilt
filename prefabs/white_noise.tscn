@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6ltlh1oowvlr"]
+
+[ext_resource type="Material" uid="uid://dx3k0ee0gkrmu" path="res://materials/material_white_noise.tres" id="1_emc76"]
+[ext_resource type="AudioStream" uid="uid://oo7d7phdwr5e" path="res://audio/sfx/white_noise.wav" id="2_83852"]
+
+[node name="WhiteNoise" type="ColorRect"]
+material = ExtResource("1_emc76")
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_83852")
+volume_db = -25.0
+autoplay = true

@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://biu6fia6bhidq"]
+
+[ext_resource type="FontFile" uid="uid://3nyeloe26j4v" path="res://fonts/graffiti.ttf" id="1_4o7j3"]
+
+[resource]
+default_font = ExtResource("1_4o7j3")

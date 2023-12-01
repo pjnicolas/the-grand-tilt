@@ -1,0 +1,94 @@
+[gd_scene load_steps=12 format=3 uid="uid://lwtwqix0rrqa"]
+
+[ext_resource type="Script" path="res://scripts/DialogController.gd" id="1_hckv4"]
+[ext_resource type="Script" path="res://scripts/DialogBoxController.gd" id="2_w5reg"]
+[ext_resource type="Theme" uid="uid://ms88awncv3el" path="res://fonts/theme_main_menu.tres" id="3_awxvr"]
+[ext_resource type="Script" path="res://scripts/DialogTextController.gd" id="4_uj2lq"]
+[ext_resource type="Script" path="res://scripts/OptionsBoxController.gd" id="5_vh82g"]
+[ext_resource type="AudioStream" uid="uid://dk6frmxhtllqh" path="res://audio/sfx/walkie_hang.wav" id="6_bswn8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6daxg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j14dw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2qplj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g15ke"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hh4wc"]
+
+[node name="Dialog" type="Node2D"]
+script = ExtResource("1_hckv4")
+
+[node name="DialogBox" type="ColorRect" parent="."]
+offset_left = 82.0
+offset_top = 43.0
+offset_right = 1110.0
+offset_bottom = 243.0
+mouse_filter = 2
+color = Color(1, 1, 1, 0)
+script = ExtResource("2_w5reg")
+
+[node name="Background" type="ColorRect" parent="DialogBox"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 1002.0
+offset_bottom = 171.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[node name="DialogText" type="RichTextLabel" parent="DialogBox"]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 21.0
+offset_right = 1002.0
+offset_bottom = 179.0
+mouse_filter = 2
+theme = ExtResource("3_awxvr")
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "Lorem ipsum"
+script = ExtResource("4_uj2lq")
+
+[node name="CanvasOptions" type="CanvasLayer" parent="."]
+
+[node name="OptionsBox" type="ColorRect" parent="CanvasOptions"]
+offset_left = 65.0
+offset_top = 387.0
+offset_right = 1090.0
+offset_bottom = 572.0
+mouse_filter = 2
+color = Color(1, 1, 1, 0)
+script = ExtResource("5_vh82g")
+
+[node name="Background" type="ColorRect" parent="CanvasOptions/OptionsBox"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 12.0
+offset_right = 1012.0
+offset_bottom = 167.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[node name="Button" type="Button" parent="."]
+offset_left = -193.0
+offset_top = -151.0
+offset_right = 1335.0
+offset_bottom = 770.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6daxg")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_j14dw")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2qplj")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_g15ke")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hh4wc")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_bswn8")
+
+[connection signal="pressed" from="Button" to="." method="_on_next_line"]

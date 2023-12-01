@@ -1,0 +1,67 @@
+,,1,A,,,¿Hola? sheriff Anderson al habla.,Hello? Sheriff Anderson speaking.
+,,4,B,,,...,...
+5,,4,B,,,"Buenos días sheriff Anderson, le estaba esperando.","Good morning Sheriff Anderson, I've been expecting you."
+,,,,,,,
+9,R,1,A,,,Entiendo que hablo con quien está al mando.,I understand I'm talking to whoever's in charge.
+13,R,1,A,,,"No hagáis ninguna tontería, vamos a hablar con calma y llegar a un acuerdo.","Don't do anything foolish, let's talk calmly and work something out."
+17,R,1,A,,,"Tenemos el edificio rodeado, espero que entendáis la gravedad de la situación.","We have you surrounded, I hope you understand the gravity of the situation."
+,,,,,,,
+,,4,B,,,Quizá decir que estoy al mando sería osado por mi parte.,Perhaps to say that I am in command would be bold of me.
+,,4,B,,,"Pero sí, es conmigo con quien va a hablar.","But yes, I'm the one you're going to talk to."
+19,,4,B,,,"Ojalá pudieramos hacerlo en otras circunstancias, pero estas son las que nos han tocado.","I wish we could do it under other circumstances, but these are the ones we've been dealt."
+,,,,,,,
+,,4,B,,,"Créame sheriff cuando le digo, que llegar a un entendimiento es lo que mas me gustaría.","Believe me, Sheriff, when I tell you that I would like to reach an understanding."
+19,,4,B,,,Pero no depende de mí.,But it is not up to me.
+,,,,,,,
+,,4,B,,,Personalmente no le recomiendo que emplee amenazas conmigo.,I personally do not recommend that you use threats against me.
+19,,4,B,,,Tratar de intimidarme no es más que un esfuerzo vacío. Y no acabará bien.,Trying to intimidate me is nothing but a futile effort. And it will not end well.
+,,,,,,,
+21,,1,A,,,Nuestra prioridad como comprenderás es proteger a los inocentes atrapados en esta situación.,Our priority as you probably understand is to protect the innocent people caught up in this situation.
+,,,,,,,
+25,R,1,A,,,¿Hay alguno herido que necesite asistencia?,Are any of them injured and in need of assistance?
+29,R,1,A,,,¿Cuantos son? ¿Están sanos y seguros?,How many are there? Are they safe and sound?
+32,R,1,A,,,"Más os vale no tocar ni un pelo a esa gente, o no saldréis bien parados.","You'd better not touch a hair on these people, or else..."
+,,,,,,,
+,,4,B,,,¿Importa si quiera? ,Does it even matter?
+,,1,A,,,"¡Claro que importa, maldita sea!","Of course it matters, damn it!"
+36,,4,B,,,"Cuando todas las cartas estén sobre la mesa, confío en que cambie de opinión, sheriff.","When all the cards are laid out, I trust you'll change your mind, Sheriff."
+,,,,,,,
+,,4,B,,,¿Hay diferencia entre tener un rehén y tener treinta?,What's the difference between having one hostage and having thirty?
+36,,4,B,,,"Igualmente no podéis entrar. Y si pudiérais, ya sabe que la situación se complicaría.","You still can't go in. And if you could, you know the situation would get complicated."
+,,,,,,,
+,,4,B,,,"O si no, ¿qué?",Or else what?
+,,4,B,,,¿Váis a entrar por las malas disparando contra todo el mundo?,You are just going to barge in and shoot everyone?
+36,,4,B,,,"No solo es una idea pésima, sino que también es un curso de acción que escapa a vuestras posibilidades.","Not only is that a lousy idea, but it's also a course of action beyond your means."
+,,,,,,,
+,,1,A,,,¿Cómo puedes estar tan tranquilo en una situación así?,How can you be so calm in a situation like this?
+,,1,A,,,¿Qué es lo que queréis?,What do you want?
+,,1,A,,,¿Una salida segura? ¿Más dinero? ¿Algún favor?,A safe exit? More money? A favor?
+,,4,B,,,"Eso sería lo esperable, ¿verdad?","You would expect that, wouldn't you?"
+,,4,B,,,"Un helicóptero en la azotea, la liberación de un amigo encarcelado a cambio de un par de rehenes...","A helicopter on the roof, releasing an imprisoned friend in exchange for a couple of hostages?"
+,,4,B,,,Pero no es el caso. Me niego a jugar con las cartas que nos han dado.,But that's not the case. I refuse to play with the cards we have been dealt.
+,,4,B,,,"Mi intención, mi propósito... es algo mucho mayor.","My intention, my purpose... is something far greater."
+,,1,A,,,"¿De qué diablos estás hablando, chico?","What the hell are you talking about, boy?"
+,,4,B,,,"Todo a su tiempo, sheriff.","All in good time, sheriff."
+,,4,B,,,Vosotros necesitáis más información. Yo necesito tiempo para ordenar mis ideas y dar mi mensaje.,You need more information. I need time to collect my thoughts and deliver my message.
+,,4,B,,,Lograr que esta vez llegue de verdad. Que signifique algo.,Make it really get through this time. Make it mean something.
+49,,4,B,,,"Estaremos en contacto, Raymond.","We'll be in touch, Raymond."
+,,,,,,,
+,,1,A,HANG,,¿Me ha llamado... Raymond?,He called me... Raymond?
+,,1,A,,,¿Como sabe...?,How did he...?
+,,2,C,,,*kzzzz*,*kzzzz*
+,,2,C,,,¿Hola? ¿Sheriff?,Hello? Sheriff?
+,,2,C,,,¿Esto funciona? ¿Jefe?,Is this working? Chief?
+,,1,A,,,"¡Joder, Torres! ¡Ya era hora!","Damn it, Torres! It's about time!"
+,,2,C,,,"Lo siento jefe, me ha pillado un buen atasco.","Sorry, boss, I got stuck in traffic."
+,,1,A,,,"Ya hablaremos sobre esto en otro momento, ahora hay vidas en juego.","We'll talk about this another time, lives are at stake now."
+,,2,C,,,¿Cuál es la situación?,What's the situation?
+,,1,A,,,"Hasta donde sabemos, unos hombres armados han tomado el edificio y retienen a los pobres diablos que estaban dentro.","As far as we know, armed men have taken over the building and are holding hostage those poor devils inside."
+,,1,A,,,"Además, el líder de los secuestradores parece un narcisista con ganas de llamar la atención.","Also, the leader of the kidnappers seems to be a narcissist with a desire for attention."
+,,1,A,,,Podría ser desde una secta hasta un grupo de comunistas idealistas.,It could be anything from a cult to a group of idealistic commies.
+,,2,C,,,¿Acaso no son lo mismo?,Aren't those two the same thing?
+,,1,A,,,"Muy divertido, Christine.","Very funny, Christine."
+,,1,A,,,Pero guárdate los chistes para cuando todo haya terminado. Hay algo que me preocupa de todo esto.,But save the jokes for when it's all over. There's something bothering me about all this.
+,,1,A,,,¿Estás ya en posición?,Are you in position yet?
+,,2,C,,,"En posición y con unas vistas fantásticas, jefe.","In position and with a great view, boss."
+,,1,A,,,Estupendo. Deberíamos comprobar primero si hay algún herido en la escena.,Great. We should check the scene for any wounded victims first.
+0,,2,C,,,¡A la orden!,"Aye, aye, sir!"

@@ -1,0 +1,13 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://uoo7jbqso5gn"
+
+[deps]
+
+source_file="res://mazes/Laberinto - Sheet1.csv"
+[params]
+
+compress=true
+delimiter=0

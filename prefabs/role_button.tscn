@@ -1,0 +1,38 @@
+[gd_scene load_steps=8 format=3 uid="uid://dpvplqbi8a0tr"]
+
+[ext_resource type="Script" path="res://scripts/RoleButtonController.gd" id="1_gijda"]
+[ext_resource type="Texture2D" uid="uid://d25ifgebl48m5" path="res://sprites/screens/sniper/sniper.png" id="2_x4dgk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cvlnv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p7p5p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pb87l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8a6nw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3udui"]
+
+[node name="RoleButton" type="Node2D"]
+scale = Vector2(1.32, 1.32)
+script = ExtResource("1_gijda")
+
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 184.0
+offset_bottom = 107.0
+
+[node name="Button" type="Button" parent="."]
+offset_right = 184.0
+offset_bottom = 107.0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cvlnv")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_p7p5p")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_pb87l")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_8a6nw")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3udui")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4, 4)
+scale = Vector2(0.582781, 0.582353)
+texture = ExtResource("2_x4dgk")
+centered = false

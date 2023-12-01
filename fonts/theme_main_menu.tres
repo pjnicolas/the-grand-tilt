@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://ms88awncv3el"]
+
+[ext_resource type="FontFile" uid="uid://dyxovu77e62xo" path="res://fonts/frogotype_tilde.ttf" id="1_t3xhm"]
+
+[resource]
+default_font = ExtResource("1_t3xhm")

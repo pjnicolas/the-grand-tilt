@@ -1,0 +1,87 @@
+[gd_resource type="VisualShader" load_steps=8 format=3 uid="uid://0p8f2v2ei7ku"]
+
+[sub_resource type="VisualShaderNodeVectorOp" id="VisualShaderNodeVectorOp_qjrja"]
+default_input_values = [0, Vector3(1, 1, 1), 1, Vector3(0, 0, 0)]
+operator = 1
+
+[sub_resource type="VisualShaderNodeVectorOp" id="VisualShaderNodeVectorOp_bjxg0"]
+default_input_values = [0, Vector3(0, 0, 0), 1, Vector3(2, 2, 2)]
+operator = 5
+
+[sub_resource type="VisualShaderNodeVectorOp" id="VisualShaderNodeVectorOp_yycpo"]
+default_input_values = [0, Vector3(1, 1, 1), 1, Vector3(0, 0, 0)]
+operator = 1
+
+[sub_resource type="VisualShaderNodeFloatConstant" id="VisualShaderNodeFloatConstant_x10qq"]
+constant = 10.0
+
+[sub_resource type="VisualShaderNodeTexture" id="VisualShaderNodeTexture_x1ga7"]
+expanded_output_ports = [0]
+source = 5
+
+[sub_resource type="VisualShaderNodeInput" id="VisualShaderNodeInput_dxk3g"]
+input_name = "uv"
+
+[sub_resource type="VisualShaderNodeInput" id="VisualShaderNodeInput_dhm02"]
+input_name = "texture"
+
+[resource]
+code = "shader_type canvas_item;
+render_mode blend_mix;
+
+
+
+
+void fragment() {
+// Input:5
+	vec2 n_out5p0 = UV;
+
+
+	vec4 n_out2p0;
+// Texture2D:2
+	n_out2p0 = texture(TEXTURE, n_out5p0);
+
+
+// VectorOp:10
+	vec3 n_in10p0 = vec3(1.00000, 1.00000, 1.00000);
+	vec3 n_out10p0 = n_in10p0 - vec3(n_out2p0.xyz);
+
+
+// FloatConstant:13
+	float n_out13p0 = 10.000000;
+
+
+// VectorOp:11
+	vec3 n_out11p0 = pow(n_out10p0, vec3(n_out13p0));
+
+
+// VectorOp:12
+	vec3 n_in12p0 = vec3(1.00000, 1.00000, 1.00000);
+	vec3 n_out12p0 = n_in12p0 - n_out11p0;
+
+
+// Output:0
+	COLOR.rgb = n_out12p0;
+
+
+}
+"
+mode = 1
+flags/light_only = false
+nodes/fragment/0/position = Vector2(620, 180)
+nodes/fragment/2/node = SubResource("VisualShaderNodeTexture_x1ga7")
+nodes/fragment/2/position = Vector2(-380, 280)
+nodes/fragment/5/node = SubResource("VisualShaderNodeInput_dxk3g")
+nodes/fragment/5/position = Vector2(-800, 120)
+nodes/fragment/6/node = SubResource("VisualShaderNodeInput_dhm02")
+nodes/fragment/6/position = Vector2(-773.362, 410.021)
+nodes/fragment/10/node = SubResource("VisualShaderNodeVectorOp_qjrja")
+nodes/fragment/10/position = Vector2(-80, 520)
+nodes/fragment/11/node = SubResource("VisualShaderNodeVectorOp_bjxg0")
+nodes/fragment/11/position = Vector2(140, 520)
+nodes/fragment/12/node = SubResource("VisualShaderNodeVectorOp_yycpo")
+nodes/fragment/12/position = Vector2(320, 520)
+nodes/fragment/13/node = SubResource("VisualShaderNodeFloatConstant_x10qq")
+nodes/fragment/13/position = Vector2(-180, 780)
+nodes/fragment/connections = PackedInt32Array(5, 0, 2, 0, 6, 0, 2, 2, 2, 0, 10, 1, 10, 0, 11, 0, 11, 0, 12, 1, 12, 0, 0, 0, 13, 0, 11, 1)
+metadata/_edit_res_path = "res://materials/shader_lighten_contrast.tres"

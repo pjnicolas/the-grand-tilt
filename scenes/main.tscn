@@ -1,0 +1,92 @@
+[gd_scene load_steps=12 format=3 uid="uid://bwfkcbb2jky3a"]
+
+[ext_resource type="Script" path="res://scripts/MainController.gd" id="1_j0f4a"]
+[ext_resource type="Script" path="res://scripts/RolesController.gd" id="2_0puqf"]
+[ext_resource type="Material" uid="uid://dmeo3e7br5n5i" path="res://materials/material_black_and_white.tres" id="2_5kf3d"]
+[ext_resource type="Material" uid="uid://cn3u2jvxl2l1u" path="res://materials/material_glitch.tres" id="3_0hkad"]
+[ext_resource type="Material" uid="uid://cdmaafl6lva8k" path="res://materials/material_glitch_mini.tres" id="4_3y3k7"]
+[ext_resource type="Material" uid="uid://55ysdfshei0w" path="res://materials/material_interactuable.tres" id="5_236vk"]
+[ext_resource type="Material" uid="uid://dnlwu8akusvmg" path="res://materials/material_lighten.tres" id="6_yvuy2"]
+[ext_resource type="Material" uid="uid://bvwydqbd3iivq" path="res://materials/material_lighten_contrast.tres" id="7_md7eb"]
+[ext_resource type="Material" uid="uid://crejfbfo2v0n5" path="res://materials/material_multiply.tres" id="8_e4e5e"]
+[ext_resource type="Material" uid="uid://xtfcuwi0f08h" path="res://materials/material_outline.tres" id="9_6ldb7"]
+[ext_resource type="Material" uid="uid://dx3k0ee0gkrmu" path="res://materials/material_white_noise.tres" id="10_raplm"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_j0f4a")
+
+[node name="ShadersPreload" type="Node2D" parent="."]
+position = Vector2(221, -108)
+
+[node name="BlackAndWhite" type="ColorRect" parent="ShadersPreload"]
+material = ExtResource("2_5kf3d")
+offset_left = -434.0
+offset_top = 21.0
+offset_right = -205.0
+offset_bottom = 109.0
+
+[node name="Glitch" type="ColorRect" parent="ShadersPreload"]
+material = ExtResource("3_0hkad")
+offset_left = -436.0
+offset_top = 21.0
+offset_right = -207.0
+offset_bottom = 109.0
+
+[node name="GlitchMini" type="ColorRect" parent="ShadersPreload"]
+material = ExtResource("4_3y3k7")
+offset_left = -436.0
+offset_top = 21.0
+offset_right = -207.0
+offset_bottom = 109.0
+
+[node name="Interactuable" type="ColorRect" parent="ShadersPreload"]
+material = ExtResource("5_236vk")
+offset_left = -438.0
+offset_top = 21.0
+offset_right = -209.0
+offset_bottom = 109.0
+
+[node name="Lighten" type="ColorRect" parent="ShadersPreload"]
+material = ExtResource("6_yvuy2")
+offset_left = -440.0
+offset_top = 21.0
+offset_right = -211.0
+offset_bottom = 109.0
+
+[node name="LightenContrast" type="ColorRect" parent="ShadersPreload"]
+material = ExtResource("7_md7eb")
+offset_left = -442.0
+offset_top = 21.0
+offset_right = -213.0
+offset_bottom = 109.0
+
+[node name="Multiply" type="ColorRect" parent="ShadersPreload"]
+material = ExtResource("8_e4e5e")
+offset_left = -444.0
+offset_top = 21.0
+offset_right = -215.0
+offset_bottom = 109.0
+
+[node name="Outline" type="ColorRect" parent="ShadersPreload"]
+material = ExtResource("9_6ldb7")
+offset_left = -446.0
+offset_top = 21.0
+offset_right = -217.0
+offset_bottom = 109.0
+
+[node name="WhiteNoise" type="ColorRect" parent="ShadersPreload"]
+material = ExtResource("10_raplm")
+offset_left = -448.0
+offset_top = 21.0
+offset_right = -219.0
+offset_bottom = 109.0
+
+[node name="Hide" type="ColorRect" parent="ShadersPreload"]
+offset_left = -454.0
+offset_top = -106.0
+offset_right = -205.0
+offset_bottom = 109.0
+color = Color(0, 0, 0, 1)
+
+[node name="Roles" type="CanvasLayer" parent="."]
+script = ExtResource("2_0puqf")

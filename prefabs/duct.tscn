@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dresm5j2t8enn"]
+
+[ext_resource type="Texture2D" uid="uid://dckx32upx1awf" path="res://sprites/screens/vents/vent.png" id="1_xsm2t"]
+
+[node name="Duct" type="Node2D"]
+
+[node name="Image" type="Sprite2D" parent="."]
+position = Vector2(2.38419e-07, 2.38419e-07)
+scale = Vector2(2.7931, 2.7931)
+texture = ExtResource("1_xsm2t")
+centered = false

@@ -1,0 +1,37 @@
+[gd_scene load_steps=7 format=3 uid="uid://gpautvjowre5"]
+
+[ext_resource type="Script" path="res://scripts/OptionButtonController.gd" id="1_j56mj"]
+[ext_resource type="Theme" uid="uid://d2gjrw51ig1cv" path="res://fonts/dialog_theme.tres" id="2_feafb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g5vr0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3lbf7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t5g27"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n7wke"]
+
+[node name="OptionButton" type="Button"]
+offset_right = 289.0
+offset_bottom = 105.0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_g5vr0")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3lbf7")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_t5g27")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_n7wke")
+script = ExtResource("1_j56mj")
+
+[node name="Text" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_right = 583.0
+offset_bottom = 37.0
+mouse_filter = 2
+theme = ExtResource("2_feafb")
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/shadow_outline_size = 6
+theme_override_constants/outline_size = 12
+text = "This is an option"

@@ -1,0 +1,6 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dnlwu8akusvmg"]
+
+[ext_resource type="Shader" uid="uid://cc8qjxy3gu25i" path="res://materials/shader_lighten.tres" id="1_nyhb2"]
+
+[resource]
+shader = ExtResource("1_nyhb2")

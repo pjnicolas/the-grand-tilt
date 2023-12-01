@@ -1,0 +1,6 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://55ysdfshei0w"]
+
+[ext_resource type="Shader" uid="uid://bmndw85y81bjh" path="res://materials/shader_interactuable.tres" id="1_p7w41"]
+
+[resource]
+shader = ExtResource("1_p7w41")

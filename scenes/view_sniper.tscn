@@ -1,0 +1,529 @@
+[gd_scene load_steps=45 format=3 uid="uid://buby4ec4s4cpd"]
+
+[ext_resource type="Script" path="res://scripts/sniper/ViewSniperController.gd" id="1_xkbxr"]
+[ext_resource type="Texture2D" uid="uid://bnal4bra8ayds" path="res://sprites/screens/sniper/building_background.png" id="2_351hj"]
+[ext_resource type="Texture2D" uid="uid://b2jutwm8m1mk5" path="res://sprites/screens/sniper/building_foreground.png" id="3_7tbou"]
+[ext_resource type="Texture2D" uid="uid://d25ifgebl48m5" path="res://sprites/screens/sniper/sniper.png" id="3_e0a3f"]
+[ext_resource type="Texture2D" uid="uid://dumham5f2a5c3" path="res://sprites/items/flower.png" id="3_g246n"]
+[ext_resource type="Texture2D" uid="uid://vg1ys3kjpkxx" path="res://sprites/characters/hostage_15.png" id="3_mxtcv"]
+[ext_resource type="Texture2D" uid="uid://h2ns143foe4w" path="res://sprites/screens/sniper/building_windows.png" id="4_avmmp"]
+[ext_resource type="Script" path="res://scripts/sniper/SniperCameraController.gd" id="4_mk6js"]
+[ext_resource type="Script" path="res://scripts/sniper/PersonaHerida.gd" id="4_mnmjl"]
+[ext_resource type="Script" path="res://scripts/sniper/AimableTerrorist.gd" id="5_2q07q"]
+[ext_resource type="Texture2D" uid="uid://bmmq2k8jg13kd" path="res://sprites/characters/hostage_11.png" id="5_n8lkf"]
+[ext_resource type="Script" path="res://scripts/sniper/AimableDoorLock.gd" id="5_vl3kv"]
+[ext_resource type="Script" path="res://scripts/sniper/AimableItem.gd" id="6_upd1s"]
+[ext_resource type="Script" path="res://scripts/sniper/AimableYourself.gd" id="7_ka2cf"]
+[ext_resource type="Texture2D" uid="uid://38pc0jxy77kt" path="res://sprites/characters/hostage_12.png" id="7_n0gf6"]
+[ext_resource type="PackedScene" uid="uid://lwtwqix0rrqa" path="res://prefabs/dialog.tscn" id="8_pavt7"]
+[ext_resource type="Texture2D" uid="uid://gn23ocqpub3m" path="res://sprites/characters/hostage_13.png" id="8_qf58n"]
+[ext_resource type="Texture2D" uid="uid://bkjshfm7luq1x" path="res://sprites/characters/hostage_14.png" id="9_hhv32"]
+[ext_resource type="Texture2D" uid="uid://cm3kfwodf08yr" path="res://sprites/characters/hostage_16.png" id="10_da4uh"]
+[ext_resource type="Texture2D" uid="uid://l6n0u0lbll0g" path="res://sprites/items/electronic_on.png" id="11_mtjl3"]
+[ext_resource type="Texture2D" uid="uid://wp8yuyy2d6s4" path="res://sprites/characters/robber_11.png" id="13_mph0e"]
+[ext_resource type="Texture2D" uid="uid://c5fqbst0r5mdo" path="res://sprites/characters/robber_12.png" id="15_lp1bt"]
+[ext_resource type="Texture2D" uid="uid://bhc38fi2xymad" path="res://sprites/characters/robber_13.png" id="16_442jn"]
+[ext_resource type="Texture2D" uid="uid://bg152r8xqrhrr" path="res://sprites/characters/robber_14.png" id="17_78hmb"]
+[ext_resource type="Texture2D" uid="uid://bwcv0dvgch23c" path="res://sprites/characters/robber_21.png" id="18_if3ps"]
+[ext_resource type="Texture2D" uid="uid://bqy8g6q2gwciq" path="res://sprites/characters/shadow_1.png" id="19_3vsvc"]
+[ext_resource type="Texture2D" uid="uid://penwghw0yhlx" path="res://sprites/characters/sniper.png" id="19_allf4"]
+[ext_resource type="Script" path="res://scripts/sniper/AimableShadow.gd" id="20_e2p08"]
+[ext_resource type="Texture2D" uid="uid://c4am60qoq7wbt" path="res://sprites/characters/shadow_2.png" id="20_r4lfo"]
+[ext_resource type="Texture2D" uid="uid://caa8c6g7aj5pg" path="res://sprites/characters/shadow_31.png" id="21_lhxbu"]
+[ext_resource type="Texture2D" uid="uid://lpiid58o1wid" path="res://sprites/characters/shadow_32.png" id="22_tu687"]
+[ext_resource type="Texture2D" uid="uid://dfcrthdj48aig" path="res://sprites/characters/shadow_41.png" id="23_erjj0"]
+[ext_resource type="Texture2D" uid="uid://dggko7hluedc" path="res://sprites/characters/shadow_42.png" id="24_pqmx4"]
+[ext_resource type="Texture2D" uid="uid://eyk84qmyyxv6" path="res://sprites/characters/shadow_43.png" id="25_pedsh"]
+[ext_resource type="AudioStream" uid="uid://ckj4gr33hdwmm" path="res://audio/sfx/sniper_shot.wav" id="27_87tjx"]
+[ext_resource type="Texture2D" uid="uid://cdexsm6ytbk22" path="res://sprites/gui/sniper/click_right.png" id="32_npa8o"]
+[ext_resource type="Theme" uid="uid://biu6fia6bhidq" path="res://fonts/theme_graffiti.tres" id="33_f5m2d"]
+[ext_resource type="Theme" uid="uid://ms88awncv3el" path="res://fonts/theme_main_menu.tres" id="34_j28kv"]
+[ext_resource type="Texture2D" uid="uid://dcgt4fh5yac7f" path="res://sprites/gui/sniper/sniper_scope.png" id="36_2cgc4"]
+[ext_resource type="Texture2D" uid="uid://l1mgl5jaedbu" path="res://sprites/gui/sniper/click_left.png" id="36_4h1u0"]
+
+[sub_resource type="Animation" id="Animation_6gbab"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Scope:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_w1sc4"]
+resource_name = "shoot"
+length = 0.6
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -100), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Scope:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -200), Vector2(0, 0)]
+}
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AudioStreamPlayer")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("27_87tjx")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("..")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.6),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"on_after_shoot"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_ntojh"]
+resource_name = "shoot_fast"
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -100), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Scope:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -200), Vector2(0, 0)]
+}
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AudioStreamPlayer")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("27_87tjx")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("..")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"on_after_shoot"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_q58fu"]
+_data = {
+"RESET": SubResource("Animation_6gbab"),
+"shoot": SubResource("Animation_w1sc4"),
+"shoot_fast": SubResource("Animation_ntojh")
+}
+
+[node name="ViewSniper" type="Node2D"]
+script = ExtResource("1_xkbxr")
+
+[node name="MapZoomIn" type="Node2D" parent="."]
+
+[node name="BuildingBack" type="Sprite2D" parent="MapZoomIn"]
+position = Vector2(137, -1)
+scale = Vector2(1.75263, 1.74462)
+texture = ExtResource("2_351hj")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="ZoomInObjects" type="Node2D" parent="MapZoomIn"]
+
+[node name="Mustia" type="Sprite2D" parent="MapZoomIn/ZoomInObjects"]
+position = Vector2(475, 251)
+scale = Vector2(1.65946, 1.65816)
+texture = ExtResource("3_g246n")
+script = ExtResource("6_upd1s")
+item_name = "SNIPER_TOOLTIP_FLOWER"
+
+[node name="PersonaHerida" type="Sprite2D" parent="MapZoomIn/ZoomInObjects"]
+position = Vector2(665, 490)
+scale = Vector2(1.65946, 1.65816)
+texture = ExtResource("3_mxtcv")
+script = ExtResource("4_mnmjl")
+item_name = "SNIPER_TOOLTIP_WOUNDED"
+
+[node name="Rehen" type="Sprite2D" parent="MapZoomIn/ZoomInObjects"]
+position = Vector2(435, 512)
+scale = Vector2(1.65946, 1.65816)
+texture = ExtResource("5_n8lkf")
+script = ExtResource("6_upd1s")
+item_name = "SNIPER_TOOLTIP_HOSTAGE"
+
+[node name="Rehen2" type="Sprite2D" parent="MapZoomIn/ZoomInObjects"]
+position = Vector2(457, 463)
+scale = Vector2(1.65946, 1.65816)
+texture = ExtResource("7_n0gf6")
+script = ExtResource("6_upd1s")
+item_name = "SNIPER_TOOLTIP_HOSTAGE"
+
+[node name="Rehen3" type="Sprite2D" parent="MapZoomIn/ZoomInObjects"]
+position = Vector2(516, 524)
+scale = Vector2(1.65946, 1.65816)
+texture = ExtResource("8_qf58n")
+script = ExtResource("6_upd1s")
+item_name = "SNIPER_TOOLTIP_HOSTAGE"
+
+[node name="Rehen4" type="Sprite2D" parent="MapZoomIn/ZoomInObjects"]
+position = Vector2(631, 508)
+scale = Vector2(1.65946, 1.65816)
+texture = ExtResource("9_hhv32")
+script = ExtResource("6_upd1s")
+item_name = "SNIPER_TOOLTIP_HOSTAGE"
+
+[node name="Rehen5" type="Sprite2D" parent="MapZoomIn/ZoomInObjects"]
+position = Vector2(708, 510)
+scale = Vector2(1.65946, 1.65816)
+texture = ExtResource("10_da4uh")
+script = ExtResource("6_upd1s")
+item_name = "SNIPER_TOOLTIP_HOSTAGE"
+
+[node name="DoorLock1" type="Sprite2D" parent="MapZoomIn/ZoomInObjects"]
+position = Vector2(419, 255)
+scale = Vector2(1.65946, 1.65816)
+texture = ExtResource("11_mtjl3")
+script = ExtResource("5_vl3kv")
+the_real_one = true
+light = 0
+item_name = "SNIPER_TOOLTIP_PANEL"
+
+[node name="DoorLock2" type="Sprite2D" parent="MapZoomIn/ZoomInObjects"]
+position = Vector2(248, 294)
+scale = Vector2(1.65946, 1.65816)
+texture = ExtResource("11_mtjl3")
+script = ExtResource("5_vl3kv")
+item_name = "SNIPER_TOOLTIP_PANEL"
+
+[node name="DoorLock3" type="Sprite2D" parent="MapZoomIn/ZoomInObjects"]
+position = Vector2(876, 294)
+scale = Vector2(1.65946, 1.65816)
+texture = ExtResource("11_mtjl3")
+script = ExtResource("5_vl3kv")
+light = 2
+item_name = "SNIPER_TOOLTIP_PANEL"
+
+[node name="Terrorist1" type="Sprite2D" parent="MapZoomIn/ZoomInObjects"]
+position = Vector2(265, 488)
+scale = Vector2(1.65946, 1.65816)
+texture = ExtResource("13_mph0e")
+script = ExtResource("5_2q07q")
+item_name = "SNIPER_TOOLTIP_ROBBER"
+
+[node name="Terrorist2" type="Sprite2D" parent="MapZoomIn/ZoomInObjects"]
+position = Vector2(322, 524)
+scale = Vector2(1.65946, 1.65816)
+texture = ExtResource("15_lp1bt")
+script = ExtResource("5_2q07q")
+item_name = "SNIPER_TOOLTIP_ROBBER"
+
+[node name="Terrorist3" type="Sprite2D" parent="MapZoomIn/ZoomInObjects"]
+position = Vector2(812, 485)
+scale = Vector2(1.65946, 1.65816)
+texture = ExtResource("16_442jn")
+script = ExtResource("5_2q07q")
+item_name = "SNIPER_TOOLTIP_ROBBER"
+
+[node name="Terrorist4" type="Sprite2D" parent="MapZoomIn/ZoomInObjects"]
+position = Vector2(861, 508)
+scale = Vector2(1.65946, 1.65816)
+texture = ExtResource("17_78hmb")
+script = ExtResource("5_2q07q")
+item_name = "SNIPER_TOOLTIP_ROBBER"
+
+[node name="Terrorist5" type="Sprite2D" parent="MapZoomIn/ZoomInObjects"]
+position = Vector2(649, 272)
+scale = Vector2(1.65946, 1.65816)
+texture = ExtResource("18_if3ps")
+script = ExtResource("5_2q07q")
+item_name = "SNIPER_TOOLTIP_ROBBER"
+
+[node name="Shadow1" type="Sprite2D" parent="MapZoomIn/ZoomInObjects"]
+visible = false
+position = Vector2(649, 275)
+scale = Vector2(1.65946, 1.65816)
+texture = ExtResource("19_3vsvc")
+script = ExtResource("20_e2p08")
+
+[node name="Shadow2" type="Sprite2D" parent="MapZoomIn/ZoomInObjects"]
+visible = false
+position = Vector2(781, 494)
+scale = Vector2(1.65946, 1.65816)
+texture = ExtResource("20_r4lfo")
+script = ExtResource("20_e2p08")
+
+[node name="Shadow3" type="Sprite2D" parent="MapZoomIn/ZoomInObjects"]
+visible = false
+position = Vector2(523, 522)
+scale = Vector2(1.65946, 1.65816)
+texture = ExtResource("21_lhxbu")
+script = ExtResource("20_e2p08")
+
+[node name="Shadow4" type="Sprite2D" parent="MapZoomIn/ZoomInObjects"]
+visible = false
+position = Vector2(532, 281)
+scale = Vector2(1.65946, 1.65816)
+texture = ExtResource("22_tu687")
+script = ExtResource("20_e2p08")
+
+[node name="Shadow5" type="Sprite2D" parent="MapZoomIn/ZoomInObjects"]
+visible = false
+position = Vector2(292, 484)
+scale = Vector2(1.65946, 1.65816)
+texture = ExtResource("23_erjj0")
+script = ExtResource("20_e2p08")
+
+[node name="Shadow6" type="Sprite2D" parent="MapZoomIn/ZoomInObjects"]
+visible = false
+position = Vector2(622, 464)
+scale = Vector2(1.65946, 1.65816)
+texture = ExtResource("24_pqmx4")
+script = ExtResource("20_e2p08")
+
+[node name="Shadow7" type="Sprite2D" parent="MapZoomIn/ZoomInObjects"]
+visible = false
+position = Vector2(750, 292)
+scale = Vector2(1.65946, 1.65816)
+texture = ExtResource("25_pedsh")
+script = ExtResource("20_e2p08")
+
+[node name="Yourself" type="Sprite2D" parent="MapZoomIn/ZoomInObjects"]
+position = Vector2(691, 49)
+scale = Vector2(1.65946, 1.65816)
+texture = ExtResource("19_allf4")
+script = ExtResource("7_ka2cf")
+item_name = "r*?@!0$401"
+
+[node name="LightsOff" type="Node2D" parent="MapZoomIn"]
+
+[node name="Black1" type="ColorRect" parent="MapZoomIn/LightsOff"]
+visible = false
+offset_left = 230.0
+offset_top = 149.0
+offset_right = 329.0
+offset_bottom = 334.0
+color = Color(0, 0, 0, 1)
+
+[node name="Black2" type="ColorRect" parent="MapZoomIn/LightsOff"]
+visible = false
+offset_left = 810.0
+offset_top = 150.0
+offset_right = 920.0
+offset_bottom = 338.0
+color = Color(0, 0, 0, 1)
+
+[node name="BuildingLights" type="Sprite2D" parent="MapZoomIn"]
+position = Vector2(137, -1)
+scale = Vector2(1.75263, 1.74462)
+texture = ExtResource("4_avmmp")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="Decals" type="Node2D" parent="MapZoomIn"]
+
+[node name="BuildingFront" type="Sprite2D" parent="MapZoomIn"]
+position = Vector2(137, -1)
+scale = Vector2(1.75263, 1.74462)
+texture = ExtResource("3_7tbou")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="MapZoomOut" type="Sprite2D" parent="."]
+scale = Vector2(3.81457, 3.81176)
+texture = ExtResource("3_e0a3f")
+centered = false
+
+[node name="Hint" type="Node2D" parent="MapZoomOut"]
+modulate = Color(1, 1, 1, 0.32549)
+position = Vector2(103.55, 147.701)
+rotation = 0.0858685
+scale = Vector2(1.36345, 1.36345)
+
+[node name="MouseButton" type="Sprite2D" parent="MapZoomOut/Hint"]
+use_parent_material = true
+position = Vector2(15.5728, 1.0491)
+scale = Vector2(0.924829, 0.924829)
+texture = ExtResource("32_npa8o")
+
+[node name="Text" type="RichTextLabel" parent="MapZoomOut/Hint"]
+use_parent_material = true
+offset_left = 22.2808
+offset_top = -3.46293
+offset_right = 222.281
+offset_bottom = 36.5371
+scale = Vector2(0.35792, 0.35792)
+theme = ExtResource("33_f5m2d")
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 20
+text = "SNIPER_TOOLTIP_AIM"
+metadata/_edit_use_anchors_ = true
+
+[node name="Yourself" type="Sprite2D" parent="MapZoomOut"]
+visible = false
+position = Vector2(182.72, 29.1204)
+scale = Vector2(0.471874, 0.472222)
+texture = ExtResource("19_allf4")
+
+[node name="Oops1" type="Sprite2D" parent="MapZoomOut"]
+position = Vector2(302, 2.893e-13)
+rotation = 3.14159
+texture = ExtResource("3_e0a3f")
+centered = false
+
+[node name="Oops2" type="ColorRect" parent="MapZoomOut"]
+offset_left = -38.0
+offset_top = -181.0
+offset_right = 350.0
+offset_bottom = -24.0
+color = Color(0, 0, 0, 1)
+
+[node name="OopsExplanation" type="RichTextLabel" parent="MapZoomOut"]
+offset_left = 33.0312
+offset_top = -150.324
+offset_right = 301.031
+offset_bottom = -59.3243
+text = "p[ls ignore this, its just a hack because we needed a little more of sky :)q"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+script = ExtResource("4_mk6js")
+
+[node name="Scope" type="Sprite2D" parent="Camera2D"]
+texture = ExtResource("36_2cgc4")
+
+[node name="AimItemName" type="RichTextLabel" parent="Camera2D"]
+offset_left = 5.0
+offset_top = -30.0
+offset_right = 691.0
+offset_bottom = 8.0
+scale = Vector2(0.5, 0.5)
+theme = ExtResource("34_j28kv")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/normal_font_size = 40
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Camera2D"]
+libraries = {
+"": SubResource("AnimationLibrary_q58fu")
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Camera2D"]
+volume_db = -10.0
+
+[node name="Hint" type="Node2D" parent="Camera2D"]
+visible = false
+position = Vector2(10, -41)
+
+[node name="MouseButton" type="Sprite2D" parent="Camera2D/Hint"]
+modulate = Color(1, 1, 1, 0.501961)
+scale = Vector2(1.659, 1.659)
+texture = ExtResource("36_4h1u0")
+
+[node name="Text" type="RichTextLabel" parent="Camera2D/Hint"]
+offset_left = 12.0
+offset_top = -5.0
+offset_right = 698.0
+offset_bottom = 33.0
+scale = Vector2(0.5, 0.5)
+theme = ExtResource("34_j28kv")
+theme_override_colors/default_color = Color(1, 1, 1, 0.501961)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/normal_font_size = 40
+text = "SNIPER_TOOLTIP_IDENTIFY"
+
+[node name="Dialog" parent="." instance=ExtResource("8_pavt7")]
+visible = false
+
+[node name="Markers" type="Node2D" parent="."]
+
+[node name="ZoomOutStart" type="Node2D" parent="Markers"]
+position = Vector2(306, 200)
+
+[node name="ZoomOutEnd" type="Node2D" parent="Markers"]
+position = Vector2(890, 510)
+
+[node name="ZoomInStart" type="Node2D" parent="Markers"]
+position = Vector2(238, 161)
+
+[node name="ZoomInEnd" type="Node2D" parent="Markers"]
+position = Vector2(907, 548)

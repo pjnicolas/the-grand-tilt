@@ -1,0 +1,46 @@
+,,1,A,,,¿Estás ahí? Quiero hablar contigo ahora.,Are you there? I want to talk to you now.
+4,,1,A,,,...,...
+,,,,,,,
+8,R,1,A,,,No podemos esperar a que os apetezca mover ficha. Hay que colaborar.,We can't wait until you feel like making a move. We have to cooperate.
+8,R,1,A,,,¿Esperas que no haga nada después de mostrar todo lo que sabes?,You expect me to do nothing after you've shown everything you know?
+8,R,1,A,,,Sin colaboración entrarán los federales. Esto pasará de negociación a tiroteo.,"Without cooperation, the feds will come turn this from negotiation to shootout."
+,,,,,,,
+,,4,B,,,...,...
+11,,4,B,,,...,...
+,,,,,,,
+15,R,1,A,,,¿Por qué me conoces? ¿En el pasado te metí entre rejas?,How do you know me? Did I put you behind bars once?
+15,R,1,A,,,"Si lo que os interesa no es el dinero, ¿por qué habéis escogido un banco?","If it's not the money you're interested in, why did you pick a bank?"
+15,R,1,A,,,Si hay alguien de la policía involucrado podrías confesar en tu beneficio.,"If you have a man inside the police involved, you could confess for your benefit."
+,,,,,,,
+,,4,B,,,...,...
+18,,4,B,,,...,...
+,,,,,,,
+,,1,A,,,"¡Estoy tratando de ayudaros, maldita sea!","I'm trying to help you, damn it!"
+,,1,A,,,Sabemos que solo hay 5 hombres armados en el interior. No tenéis nada que hacer.,We know there are only 5 armed men inside. You have nothing to do.
+,,1,A,,,Si los de arriba dieran la orden...,If the higher-ups gave the order...
+,,4,B,,,¿Qué acaba de decir?,What did you just say?
+,,1,A,,,Que los de fuerzas especiales podrían tomarnos el relevo y...,That the special forces could take over and...
+,,4,B,,,"No, la otra parte.","No, before that."
+,,4,B,,,¿Ha dicho que solo hay 5? ¿Torres solo ha visto a 5 secuestradores?,Did you say there's only 5? Torres only saw 5 kidnappers?
+,,4,B,,,Pero eso... eso no es posible. Algo ha tenido que salir mal.,But that... that's not possible. Something must have gone wrong.
+28,,4,B,,,¡Esto lo cambia todo! Tengo que investigarlo.,This changes everything! I'll have to investigate.
+,,,,,,,
+32,R,1,A,,,¿Qué dices? ¿Que algunos de tus hombres han huído?,What are you saying? Some of your men are on the run?
+32,R,1,A,,,¿¡Qué diablos tienes que investigar!?,What the hell do you have to investigate!?
+32,R,1,A,,,"¡Se acabaron los juegos, chico! ¡Quiero respuestas aquí y ahora!","No more games, kid! I want answers here and now!"
+,,,,,,,
+,,4,B,,,...,...
+,,4,B,,,¿Está seguro de que quiere hacer que ambos perdamos nuestro valioso tiempo?,Are you sure you want to waste our valuable time?
+,,4,B,,,"Sobre todo, teniendo en cuenta que debe preocuparse de un asunto delicado.",Especially since you have a delicate matter to worry about.
+,,4,B,,,"Sorpresa, tenemos una bomba.","Surprise, we have a bomb."
+,,4,B,,,Un potente artefacto explosivo que seguro que le mantendrá un rato con la cabeza ocupada.,A powerful explosive device that's sure to keep your head busy for a while.
+,,4,B,,,"¡Hable con su equipo, contacte con expertos, escale su operación, aumente el cordón policial para evitar daños colaterales!","Talk to your team, contact experts, scale up your operation, increase the police line to avoid collateral damage!"
+40,,4,B,,,Y lo más importante... No me entretenga más.,And most importantly... Don't keep me any longer.
+,,,,,,,
+,,1,A,HANG,,Maldita sea...,Damn it...
+,,1,A,,,"¿Torres, me recibes?","Torres, do you read me?"
+,,2,C,,,"Alto y claro, jefe.","Loud and clear, boss."
+,,1,A,,,"Creo que nuestro hombre está más loco de lo que pensaba. No sé si creerle, pero ha asegurado tener una bomba.","I think our man is crazier than I thought. I don't know if I believe him, but he is claiming to have a bomb."
+,,1,A,,,"Es probable que sea otro síntoma de su esquizofrenia o lo que diablos le pase, pero hay que asegurarse.","It's probably another symptom of his schizophrenia or whatever the hell is wrong with him, but we have to be sure."
+,,1,A,,,Por lo menos habíamos previsto esta situación.,At least we had anticipated this situation.
+0,,1,A,,,"Miller, ¿estás en posición?","Miller, are you in position?"

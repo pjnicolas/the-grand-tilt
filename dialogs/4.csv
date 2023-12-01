@@ -1,0 +1,55 @@
+,,1,A,,,Al habla el sheriff Anderson. ¿Estás ahí?,Sheriff Anderson speaking. You there?
+4,,4,B,,,"Que pronto ha regresado, sheriff. ¿En qué puedo ayudarle?","You're back soon, Sheriff. How can I help you?"
+,,,,,,,
+8,R,1,A,,,Uno de los civiles está sangrando. Dejadnos sacarla para atenderle.,One of the civilians is bleeding. Let us take her out for treatment.
+12,R,1,A,,,"Entregadnos a la mujer herida, un rehén menos no os afecta en nada.","Hand over the wounded woman, one less hostage doesn't matter to you."
+18,R,1,A,,,"Si actuáis con violencia sobre los civiles, haremos lo mismo con vosotros.","If you act violently on the civilians, we will do the same to you."
+,,,,,,,
+,,4,B,,,"No tiene de qué preocuparse, sheriff.","You have nothing to worry about, sheriff."
+,,4,B,,,Vamos a tratar sus heridas y a asegurarnos de que no le pase nada.,We'll treat her wounds and make sure nothing happens to her.
+23,,4,B,,,No me gustaría perder tan pronto uno de los motivos que me permiten seguir hablando con usted.,I would hate to lose one of my reasons for continuing conversations here.
+,,,,,,,
+,,4,B,,,"Tienes razón en parte, pero tampoco soy estúpido.","You're partly right, but I'm not stupid either."
+,,4,B,,,Detesto los raíles por los que estamos destinados a viajar durante esta negociación.,I hate the rails we are destined to travel on during this negotiation.
+,,4,B,,,"El tira y afloja de quien tiene en sus manos la vida de inocentes, y del que tiene la fuerza para aplastar al primero.","The push and pull of the one who holds the lives of innocents in his hands, and the one who has the strength to crush the first."
+,,4,B,,,"Pero sé que si empezara a deshacerme de ellos, toda esta situación terminaría demasiado pronto.","But I know that if I were to start getting rid of them, this whole situation would end too soon."
+23,,4,B,,,"Y no me conviene, sheriff.","And that doesn't suit me, sheriff."
+,,,,,,,
+,,4,B,,,"Violencia, violencia y más violencia. ¿Es el único lenguaje que conoce?","Violence, violence and more violence. Is that the only language you know?"
+,,4,B,,,La satisfacción de ver como el bueno aplasta sin piedad al malo.,The satisfaction of watching the good guy crush the bad guy mercilessly.
+,,4,B,,,"No es más que una burda fantasía de poder, ¿no cree?","It's nothing but a crude power fantasy, don't you think?"
+23,,4,B,,,¿Es acaso a lo único a lo que se puede aspirar en este mundo?,Is that the only thing you can aspire to in this world?
+,,,,,,,
+,,4,B,,,Por cierto.,By the way.
+,,4,B,,,He de deducir por esta nueva conversación...,I gather from this new conversation...
+,,4,B,,,"Que la joven teniente Torres está ya en posición, ¿cierto?","That young Lieutenant Torres is already in position, right?"
+28,,1,A,,,¿Cómo diablos sabes...?,How the hell do you know...?
+,,,,,,,
+32,R,1,A,,,¿A qué estás jugando? ¿Quién eres?,What are you playing at? Who are you?
+34,R,1,A,,,¿Esto es algún tipo de venganza personal?,Is this some kind of personal vendetta?
+37,R,1,A,,,"Te crees muy listo, ¿verdad? Estás agotando mi paciencia.","You think you're so smart, don't you? You're trying my patience."
+,,,,,,,
+40,,4,B,,,"Ojalá me recordárais, haría mucho más fácil todo esto.","I wish you'd remember me, it would make this all so much easier."
+,,,,,,,
+,,4,B,,,"No es una venganza, yo solo quiero lo mejor para todos.","It's not a vendetta, I just want what's best for everyone."
+40,,4,B,,,Pero hasta las mejores intenciones pueden retorcerse si vienen de un hombre agotado.,But even the best intentions can get badly twisted if they come from an exhausted man.
+,,,,,,,
+,,4,B,,,"No intento burlarme de vosotros, de verdad.","I'm not trying to make fun of you, really."
+40,,4,B,,,"Ojalá entendiérais que en esta situación, yo no soy más que un amigo.","I wish you understood that in this situation, I'm no more than a friend."
+,,,,,,,
+,,1,A,,,¿Quieres enviarnos un mensaje? ¿Era eso?,You want to send us a message? Is that it?
+,,1,A,,,"Adelante, te escucho.","Go ahead, I'm listening."
+,,4,B,,,"Vosotros no me recordáis, pero yo sí que os conozco bien.","You don't remember me, but I know you well."
+,,4,B,,,"Y por eso sé que, como he dicho antes, aún es pronto.","And that's why I know that, as I said before, it's still too soon."
+46,,4,B,,,"Quiero probar algo nuevo, ya hablaremos.","I want to try something new, we'll talk."
+,,,,,,,
+,,1,A,HANG,,...,...
+,,1,A,,,Torres...,Torres...
+,,2,C,,,"¿Sí, jefe? ¿Le has sacado algo a ese malnacido?","Yes, boss? Did you get anything out of that bastard?"
+,,1,A,,,"Debemos tener mucho cuidado con esta gente, están tramando algo que se me escapa.","We have to be very careful with these people, they're up to something that escapes me."
+,,1,A,,,Tienen demasiada información y están muy confiados.,They have too much information and they're too confident.
+,,1,A,,,De hecho... Empiezo a pensar que puede que haya un topo en la comisaría.,In fact... I'm beginning to think there may be a mole in the station.
+,,2,C,,,¿¡Qué!? ¿¡En serio!?,What?!? Really?!?!?
+,,1,A,,,Vamos a ser precavidos y recopilar primero toda la información posible.,Let's be cautious and gather as much information as possible first.
+,,1,A,,,¿Cuantos hombres armados hay en el interior?,How many armed men are inside?
+0,,2,C,,,¡Marchando un recuento!,Getting a head count!

@@ -1,0 +1,30 @@
+,,3,A,,,Estoy en la planta subterránea. Está todo muy oscuro pero no parece haber nadie.,I am in the basement. It's pitch black but there doesn't seem to be anyone around.
+,,1,C,,,"Ten cuidado, Miller. No sabemos donde está ese bastardo, podría aparecer por sorpresa.","Be careful, Miller. We don't know where that bastard is, he might show up unexpectedly."
+,,3,A,,,"No se preocupe, voy a atrancar el acceso de la escalera para que no baje nadie mientras tanto.","Don't worry, I'm going to barricade the stairway access so no one comes down in the meantime."
+,,3,A,BOMB,,"Por desgracia no era un farol, definitivamente aquí hay una bomba.","Unfortunately he wasn't bluffing, there's definitely a bomb here."
+,,2,C,,,"Más te vale dar la talla, me viene fatal tener que ir a un funeral esta semana.","You'd better measure up, it'd be a real bummer for me to have to go to a funeral this week."
+,,3,A,,,"El artefacto parece potente, pero no demasiado complejo ni fuera de lo común.","The device looks powerful, but not too complex or out of the ordinary."
+,,3,A,,,"El teclado parece que no funciona, que extraño. Tendré que manipular los cables.","The keyboard doesn't seem to be working, how strange. I'll have to fiddle with the wires."
+,,1,C,,,"No te precipites, tu seguridad es la prioridad.","Don't be hasty, your safety is the priority."
+,,3,A,,,Este cable debería anular el primer sensor del módulo de detonación...,This wire should override the first sensor in the detonation module....
+,,3,A,WIRE1,,*CLICK*,*CLICK*
+,,2,C,,,No entiendo como puedes trabajar con explosivos y seguir tan tranquilo.,I don't understand how you can work with explosives and still be so calm.
+,,3,A,,,"Desactivar una bomba es como hacer un puzle, pero al revés. Sinceramente, me relaja.","Defusing a bomb is like doing a puzzle, but in reverse. Honestly, it relaxes me."
+,,3,A,,,"Me hace sentir más confiado y valiente, seguro de mis decisiones.","It makes me feel more confident and brave, sure of my decisions."
+,,3,A,,,"Vale, ahora seguiría el rojo, que debería desactivar el sistema de bloqueo e ignición remota.","Okay, now the red one would follow, which should disable the remote ignition and locking system."
+,,3,A,WIRE2,,*CLICK*,*CLICK*
+,,3,A,,,"De hecho, aprovechando que me siento así... He estado pensando algo, Christine.","In fact, since I'm feeling this way... I've been doing some thinking, Christine."
+,,3,A,,,Realmente disfruto mucho de tu sentido del humor.,I really enjoy your sense of humor.
+,,3,A,,,Y siempre he admirado lo valiente y sincera que eres. No sé por qué no te había dicho esto mucho antes.,And I've always admired how brave and sincere you are. I don't know why I haven't told you this much sooner.
+,,2,C,,,"Joder, Jerry. ¿De verdad crees que es el mejor momento para esto?","Fuck, Jerry. Do you really think this is the best time for this?"
+,,3,A,,,¿Qué mejor momento que salvando un montón de vidas y siendo un héroe?,What better time than saving a bunch of lives and being a hero?
+,,3,A,,,Por último... El conector amarillo enlaza el explosivo plástico a la matriz de recepción.,Lastly... The yellow connector links the plastic explosive to the receiving matrix.
+,,3,A,,,"Solo tengo que presionar aqui, extraer este chip y...","I just have to press here, extract this chip and..."
+,,3,A,,,...,...
+,,3,A,WIRE3,,*CLICK*,*CLICK*
+,,3,A,,,"Ufff... ¡Bomba desactivada, sheriff!","Phew... Bomb defused, sheriff!"
+,,1,C,,,"Gracias al cielo. Buen trabajo, hijo.","Thank the heavens. Good job, son."
+,,2,C,,,¡Eres de lo que no hay! Quizá no seas daltónico después de todo.,You're the real deal! Maybe you're not colorblind after all.
+,,3,A,,,Como iba diciendo...,As I was saying...
+,,3,A,,,"Christine, ¿quieres que salgamos un día?","Christine, do you want to go out for a date sometime?"
+0,,3,A,GLITCH_BOMB,,Siempre me has gustad...,I've always liked y...

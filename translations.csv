@@ -1,0 +1,30 @@
+keys,es,en
+DIALOG_NAME_SHERIFF,Sheriff,Sheriff
+DIALOG_NAME_SNIPER,Tte. Torres,Lt. Torres
+DIALOG_NAME_MILLER,Sgto. Miller,Sgt. Miller
+DIALOG_NAME_VILLAIN1,Atracador,Robber
+DIALOG_NAME_VILLAIN2,???,Him
+DIALOG_NAME_PLAYER,Tú,You
+MENU_OPTION_PLAY,Jugar,Play
+MENU_OPTION_ENGLISH,English,English
+MENU_OPTION_SPANISH,Español,Español
+MENU_OPTION_FULLSCREEN,Pantalla Completa,Fullscreen
+MENU_OPTION_CREDITS,Créditos,Credits
+MENU_OPTION_EXIT,Salir,Exit
+MENU_CREDITS_PROGRAMMED,[center]Programado por,[center]Programmed by
+MENU_CREDITS_DESIGNED,[center]Escrito y Diseñado por,[center]Written and Designed by
+MENU_CREDITS_AND,[center]y,[center]and
+MENU_CREDITS_ART,[center]Arte por,[center]Art by
+MENU_CREDITS_MENU,Volver al Menú,Back to Main Menu
+SNIPER_TOOLTIP_AIM,APUNTAR,AIM
+SNIPER_TOOLTIP_IDENTIFY,Identificar,Identify
+SNIPER_TOOLTIP_SHOOT,Disparar,Shoot
+SNIPER_TOOLTIP_PANEL,Panel eléctrico,Electric panel
+SNIPER_TOOLTIP_FLOWER,Flor mustia,Withered flower
+SNIPER_TOOLTIP_ROBBER,Ladrón,Thug
+SNIPER_TOOLTIP_IDENTIFIED,Ladrón identificado,Thug identified
+SNIPER_TOOLTIP_HOSTAGE,Rehén,Hostage
+SNIPER_TOOLTIP_WOUNDED,Rehén herido,Wounded hostage
+ENDING_BUTTON_EXPORT,[center]Exportar a Internet,[center]Export to the Internet
+ENDING_BUTTON_RESTART,[center]Cargar partida,[center]Reload game
+ENDING_TEXT_RESTORE,"[center]Restaurando [color="#B92B2B"]Villano[/color].dat","[center]Restoring [color="#B92B2B"]Villain[/color].dat"

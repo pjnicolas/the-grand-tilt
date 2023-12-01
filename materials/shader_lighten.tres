@@ -1,0 +1,69 @@
+[gd_resource type="VisualShader" load_steps=6 format=3 uid="uid://cc8qjxy3gu25i"]
+
+[sub_resource type="VisualShaderNodeInput" id="VisualShaderNodeInput_lwn5v"]
+input_name = "uv"
+
+[sub_resource type="VisualShaderNodeInput" id="VisualShaderNodeInput_ytlio"]
+input_name = "texture"
+
+[sub_resource type="VisualShaderNodeTexture" id="VisualShaderNodeTexture_ex3y2"]
+output_port_for_preview = 0
+expanded_output_ports = [0]
+source = 5
+
+[sub_resource type="VisualShaderNodeMix" id="VisualShaderNodeMix_y8pgw"]
+default_input_values = [0, Vector3(0, 0, 0), 1, Vector3(1, 1, 1), 2, Vector3(0.5, 0.5, 0.5)]
+op_type = 3
+
+[sub_resource type="VisualShaderNodeFloatConstant" id="VisualShaderNodeFloatConstant_il055"]
+constant = 0.2
+
+[resource]
+code = "shader_type canvas_item;
+render_mode blend_mix;
+
+
+
+
+void fragment() {
+// Input:2
+	vec2 n_out2p0 = UV;
+
+
+	vec4 n_out5p0;
+// Texture2D:5
+	n_out5p0 = texture(TEXTURE, n_out2p0);
+	float n_out5p4 = n_out5p0.a;
+
+
+// FloatConstant:7
+	float n_out7p0 = 0.200000;
+
+
+// Mix:6
+	vec3 n_in6p1 = vec3(1.00000, 1.00000, 1.00000);
+	vec3 n_out6p0 = mix(vec3(n_out5p0.xyz), n_in6p1, vec3(n_out7p0));
+
+
+// Output:0
+	COLOR.rgb = n_out6p0;
+	COLOR.a = n_out5p4;
+
+
+}
+"
+mode = 1
+flags/light_only = false
+nodes/fragment/0/position = Vector2(460, 220)
+nodes/fragment/2/node = SubResource("VisualShaderNodeInput_lwn5v")
+nodes/fragment/2/position = Vector2(-500, 0)
+nodes/fragment/4/node = SubResource("VisualShaderNodeInput_ytlio")
+nodes/fragment/4/position = Vector2(-540, 140)
+nodes/fragment/5/node = SubResource("VisualShaderNodeTexture_ex3y2")
+nodes/fragment/5/position = Vector2(-120, 60)
+nodes/fragment/6/node = SubResource("VisualShaderNodeMix_y8pgw")
+nodes/fragment/6/position = Vector2(200, -20)
+nodes/fragment/7/node = SubResource("VisualShaderNodeFloatConstant_il055")
+nodes/fragment/7/position = Vector2(-180, -100)
+nodes/fragment/connections = PackedInt32Array(4, 0, 5, 2, 2, 0, 5, 0, 5, 4, 0, 1, 5, 0, 6, 0, 6, 0, 0, 0, 7, 0, 6, 2)
+metadata/_edit_res_path = "res://materials/shader_lighten.tres"

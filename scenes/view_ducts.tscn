@@ -1,0 +1,345 @@
+[gd_scene load_steps=38 format=3 uid="uid://vu6yl6h57u07"]
+
+[ext_resource type="Script" path="res://scripts/ducts/ViewDuctsController.gd" id="1_ut4y3"]
+[ext_resource type="PackedScene" uid="uid://lwtwqix0rrqa" path="res://prefabs/dialog.tscn" id="2_p13om"]
+[ext_resource type="Texture2D" uid="uid://dxe2qrpcjqe4n" path="res://sprites/screens/vents/bomb.png" id="3_4teru"]
+[ext_resource type="AudioStream" uid="uid://ljncaf5awcn3" path="res://audio/sfx/explosion.wav" id="3_06ff6"]
+[ext_resource type="AudioStream" uid="uid://c55e8thaekban" path="res://audio/sfx/tiktok_bomb.wav" id="4_ml5o5"]
+[ext_resource type="AudioStream" uid="uid://b00tv53nieeg" path="res://audio/sfx/ducts_movement.wav" id="4_xqyt7"]
+[ext_resource type="AudioStream" uid="uid://qdkoc0uqdk0r" path="res://audio/sfx/cortacables.wav" id="5_a0h0e"]
+[ext_resource type="AudioStream" uid="uid://dl1np2icwhmdl" path="res://audio/sfx/ducts_descend.wav" id="5_i3vxh"]
+[ext_resource type="Script" path="res://scripts/ducts/CameraController.gd" id="8_jaiqo"]
+[ext_resource type="Script" path="res://scripts/ducts/TurnAroundController.gd" id="9_atixh"]
+[ext_resource type="Texture2D" uid="uid://d3de5sa5wqv7w" path="res://sprites/gui/vents/arrow_turn_shadow.png" id="9_e1qvv"]
+[ext_resource type="Texture2D" uid="uid://b0qy2e1u1o0lt" path="res://sprites/gui/vents/arrow_turn.png" id="10_2mxqu"]
+[ext_resource type="Script" path="res://scripts/ducts/OpenMapController.gd" id="12_3j6f1"]
+[ext_resource type="Texture2D" uid="uid://3si080jo3ntj" path="res://sprites/gui/vents/map_corner.png" id="12_5vbub"]
+[ext_resource type="Texture2D" uid="uid://bfh7eiw4utmgr" path="res://sprites/screens/map/map_first.png" id="14_1n2do"]
+[ext_resource type="Texture2D" uid="uid://didy71sutgfpq" path="res://sprites/screens/map/map_first_vents.png" id="15_md560"]
+[ext_resource type="Texture2D" uid="uid://dcgagxrwwdk8n" path="res://sprites/screens/map/map_player.png" id="16_bm3ha"]
+[ext_resource type="Texture2D" uid="uid://dy1q3gyk0o0ou" path="res://sprites/screens/map/map_second.png" id="16_rxmpf"]
+[ext_resource type="Texture2D" uid="uid://8322emcctfkc" path="res://sprites/screens/map/map_second_vents.png" id="17_x21qi"]
+
+[sub_resource type="Animation" id="Animation_arh2y"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ckq61"]
+resource_name = "fade"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"_on_anim_fade_middle"
+}, {
+"args": [],
+"method": &"_on_anim_fade_end"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_xhuso"]
+resource_name = "fade_long"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1, 1),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"_on_anim_fade_middle"
+}, {
+"args": [],
+"method": &"_on_anim_fade_end"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nil11"]
+_data = {
+"RESET": SubResource("Animation_arh2y"),
+"fade": SubResource("Animation_ckq61"),
+"fade_long": SubResource("Animation_xhuso")
+}
+
+[sub_resource type="Animation" id="Animation_js4ni"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_gbmom"]
+resource_name = "explosion"
+tracks/0/type = "audio"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AudioExplosion")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"clips": [{
+"end_offset": 0.10496,
+"start_offset": 0.0,
+"stream": ExtResource("3_06ff6")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/0/use_blend = true
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.3, 1),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"on_explosion_end"
+}, {
+"args": [],
+"method": &"on_explosion_end_next_dialog"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_nxdcb"]
+resource_name = "fade_in"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_abddd"]
+_data = {
+"RESET": SubResource("Animation_js4ni"),
+"explosion": SubResource("Animation_gbmom"),
+"fade_in": SubResource("Animation_nxdcb")
+}
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6rexq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yhqkf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o77us"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_smxbp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1ohli"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_taubv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iycfi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eis8o"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cd3ps"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q5tlm"]
+
+[node name="ViewDucts" type="Node2D"]
+script = ExtResource("1_ut4y3")
+
+[node name="Ducts" type="Node2D" parent="."]
+
+[node name="Fade" type="ColorRect" parent="."]
+offset_left = -149.0
+offset_top = -33.0
+offset_right = 1207.0
+offset_bottom = 727.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Fade"]
+libraries = {
+"": SubResource("AnimationLibrary_nil11")
+}
+
+[node name="Bomb" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(576, 324)
+scale = Vector2(3.81457, 3.81177)
+texture = ExtResource("3_4teru")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Bomb"]
+libraries = {
+"": SubResource("AnimationLibrary_abddd")
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Bomb"]
+stream = ExtResource("4_ml5o5")
+volume_db = -10.0
+
+[node name="AudioExplosion" type="AudioStreamPlayer" parent="Bomb"]
+
+[node name="AudioClick" type="AudioStreamPlayer" parent="Bomb"]
+stream = ExtResource("5_a0h0e")
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="."]
+copy_mode = 2
+
+[node name="Dialog" parent="." instance=ExtResource("2_p13om")]
+visible = false
+
+[node name="AudioMovement" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_xqyt7")
+volume_db = -15.0
+
+[node name="AudioDescend" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_i3vxh")
+volume_db = -10.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+script = ExtResource("8_jaiqo")
+
+[node name="TurnAround" type="Button" parent="."]
+offset_left = 324.0
+offset_top = 537.0
+offset_right = 506.0
+offset_bottom = 621.0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6rexq")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_yhqkf")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o77us")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_smxbp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1ohli")
+script = ExtResource("9_atixh")
+
+[node name="Shadow" type="Sprite2D" parent="TurnAround"]
+position = Vector2(91.416, 42.208)
+scale = Vector2(2.763, 2.763)
+texture = ExtResource("9_e1qvv")
+
+[node name="Arrow" type="Sprite2D" parent="TurnAround"]
+position = Vector2(91.416, 42.208)
+scale = Vector2(2.763, 2.763)
+texture = ExtResource("10_2mxqu")
+
+[node name="OpenMap" type="Button" parent="."]
+offset_left = 1023.0
+offset_top = 519.0
+offset_right = 1152.0
+offset_bottom = 648.0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_taubv")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_iycfi")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_eis8o")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_cd3ps")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_q5tlm")
+script = ExtResource("12_3j6f1")
+
+[node name="Sprite2D" type="Sprite2D" parent="OpenMap"]
+position = Vector2(4, 4)
+scale = Vector2(2.4, 2.4)
+texture = ExtResource("12_5vbub")
+centered = false
+
+[node name="Maps" type="CanvasLayer" parent="."]
+
+[node name="MapFloor2" type="Node2D" parent="Maps"]
+visible = false
+
+[node name="Background" type="Sprite2D" parent="Maps/MapFloor2"]
+scale = Vector2(3.81457, 3.81176)
+texture = ExtResource("14_1n2do")
+centered = false
+
+[node name="Foreground" type="Sprite2D" parent="Maps/MapFloor2"]
+scale = Vector2(3.81457, 3.81176)
+texture = ExtResource("17_x21qi")
+centered = false
+
+[node name="StartCell" type="Node2D" parent="Maps/MapFloor2"]
+position = Vector2(778, 229)
+
+[node name="PlayerMarker" type="Sprite2D" parent="Maps/MapFloor2"]
+position = Vector2(702, 259)
+scale = Vector2(1.908, 1.908)
+texture = ExtResource("16_bm3ha")
+offset = Vector2(7.915, 1.135)
+
+[node name="MapFloor1" type="Node2D" parent="Maps"]
+visible = false
+
+[node name="Background" type="Sprite2D" parent="Maps/MapFloor1"]
+scale = Vector2(3.81457, 3.81176)
+texture = ExtResource("16_rxmpf")
+centered = false
+
+[node name="Foreground" type="Sprite2D" parent="Maps/MapFloor1"]
+scale = Vector2(3.81457, 3.81176)
+texture = ExtResource("15_md560")
+centered = false
+
+[node name="StartCell" type="Node2D" parent="Maps/MapFloor1"]
+position = Vector2(450, 187)
+
+[node name="PlayerMarker" type="Sprite2D" parent="Maps/MapFloor1"]
+position = Vector2(702, 259)
+scale = Vector2(1.908, 1.908)
+texture = ExtResource("16_bm3ha")
+offset = Vector2(7.915, 1.135)

@@ -1,0 +1,10 @@
+{
+  "files.exclude": {
+    "*.import": true,
+    "*/*.import": true,
+    ".godot/": true,
+    ".vscode/": true,
+    ".gitignore": true,
+    ".gitattributes": true,
+  }
+}

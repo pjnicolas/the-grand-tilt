@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://xcnynct24mx"]
+
+[ext_resource type="Texture2D" uid="uid://duktpx7h5217s" path="res://sprites/items/glass_small.png" id="1_e3phj"]
+
+[node name="Decal" type="Sprite2D"]
+scale = Vector2(1.659, 1.665)
+texture = ExtResource("1_e3phj")

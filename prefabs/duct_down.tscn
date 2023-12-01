@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnfvtr1ymt5ve"]
+
+[ext_resource type="Script" path="res://scripts/ducts/DuctSideController.gd" id="1_jpjta"]
+[ext_resource type="Texture2D" uid="uid://buk3wbu0idx07" path="res://sprites/screens/vents/vent_down.png" id="2_wqlg7"]
+
+[node name="DuctNext" type="Node2D"]
+script = ExtResource("1_jpjta")
+move_direction = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2.7931, 2.7931)
+texture = ExtResource("2_wqlg7")
+centered = false
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PackedVector2Array(214, 170, 290, 424, 205, 493, 620, 492, 545, 421, 625, 162)

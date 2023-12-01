@@ -1,0 +1,43 @@
+3,,1,A,,,...,...
+,,,,,,,
+7,R,1,A,,,¡Dime que es otro truco! ¡Dime que no has matado a mi hombre!,Tell me it's another trick! Tell me you didn't kill my officer!
+7,R,1,A,,,¿Qué clase de mensaje es este? ¡Lo único que haces es crear caos!,What kind of message is this? All you're doing is creating chaos!
+7,R,1,A,,,Ojalá la explosión te haya alcanzado a ti también y te arrastre al infierno.,"Hopefully the explosion got you too, and you'll be blown to hell."
+,,,,,,,
+,,4,B,,,"Supongo que si la bomba es imposible de desactivar, la diversión desaparece.","I guess if the bomb is impossible to defuse, then the fun ends."
+,,4,B,,,Lo lamento pero debía comprobar mis capacidades. Al menos ha sido un final digno de su habilidad.,I'm sorry but I had to test my capabilities. At least it was an ending worthy of his skill.
+,,2,C,,,"Ese cabrón te está hablando, ¿verdad? ¡Dile que se dé por muerto!","That bastard's talking to you, isn't he? Tell him he's as good as dead!"
+,,1,A,,,¡Basta de juegos! ¡Voy a entrar ahora mismo y a sacarte de ahí a punta de pistola!,Enough games! I'm going in right now and get you out of there at gunpoint!
+,,4,B,,,"Adelante, te espero.","Go ahead, I'll wait for you."
+,,1,A,,,...,...
+,,1,A,,,...,...
+,,4,B,,,¿Y bien?,Well?
+,,1,A,,,¿Pero qué...?,What the...?
+,,4,B,,,No puedes. Sencillamente no puedes. ,You can't. You simply can't.
+,,4,B,,,"Tu programación te limita. Estás destinado a quedarte ahí en la puerta y negociar conmigo, nada más.","Your programming limits you. You're destined to stand there at the door and negotiate with me, nothing more."
+,,4,B,,,"Al igual que yo, solo eres una voz sin cuerpo. Solo un montón de líneas de texto.","Like me, you're just a disembodied voice. Just a bunch of lines of text."
+21,,4,B,,,"Y es precisamente por esa intangibilidad por la que he sido capaz de ir a las entrañas de este mundo, y cambiarlo.","And it is precisely because of that intangibility that I have been able to go into the bowels of this world, and change it."
+,,,,,,,
+25,R,1,A,,,¿Qué tontería es esa? Soy una persona real y puedo decidir qué hacer.,What nonsense is that? I'm a real person and I can decide what to do.
+25,R,1,A,,,"Estás completamente loco, solo tratas de confundirme.","You're completely crazy, you're just trying to confuse me."
+25,R,1,A,,,"Acabaré contigo aunque sea lo último que haga, ¡vengaré a mi agente!","I'll finish you if it's the last thing I do, I'll avenge my agent!"
+,,,,,,,
+,,4,B,,,"¿Has sido tú quien ha decidido decir eso, o ni siquiera tienes el control sobre tus palabras?","Is it you who decided to say that, or do you not even have control over your own words?"
+,,1,A,,,"No lo entiendo, yo... ¿Qué está pasando?","I don't understand, I... What's going on?"
+,,2,C,,,"¡Joder sheriff, dime algo!","Fuck, sheriff, tell me something!"
+,,4,B,,,"Hay alguien más decidiendo por ti, ¿verdad?","There's someone else deciding for you, isn't there?"
+,,6,B,GLITCH,,"Sí, me refiero a ti. ¿Te estás divirtiendo?","Yes, I mean you. Are you having fun?"
+,,,,,,,
+35,R,5,C,,,"Bastante, la verdad. No esperaba tantas mecánicas.","Quite a bit, actually. I wasn't expecting so many mechanics."
+35,R,5,C,,,"Lo de los conductos ha sido un poco confuso, pero sí, es entretenido.","The ducts thing was a bit confusing, but yeah, it's entertaining."
+35,R,5,C,,,"Nah, demasiados tópicos de película de policias. Espero que ahora mejore.","Nah, too many cop movie clichés. I hope it gets better now."
+,,,,,,,
+,,1,A,,,"Espera, ¿quién diablos ha dicho eso?","Wait, who the hell said that?"
+,,6,B,,,"Escúchame Ray, todo esto no es más que un videojuego. Sabía que era una ficción pero hoy al fin he descubierto de qué tipo.","Listen Ray, this is all just a video game. I knew it was a fiction but today I finally figured out what kind."
+,,6,B,,,"Y ni siquiera es uno bueno, es solo un pequeño juego de Jam. Es tan deprimente...","And it's not even a good one, it's just a little Jam game. So damn depressing...."
+,,6,B,GLITCH,,"Ah, por cierto, si no te importa...","Oh, by the way, if you don't mind...."
+,,6,C,WALKIE2,,Voy a empezar a usar esta caja de texto. Esperar a que me llames para hablar ahora sería un obstáculo.,I'm going to start using this text box. Waiting for you to call me in order to talk now would be a hindrance.
+,,2,C,,,"¿¡Qué mierda está pasando, Ray!? ¡Contesta!","What the fuck is going on, Ray?! Pick up!"
+,,6,C,,,"Calma, Christine. Estoy intentando hacer entender a Raymond que...","Calm down, Christine. I'm trying to make Raymond understand that..."
+,,2,C,,,"¡Eres tú, hijo de puta! ¡Has matado a Jerry! ¡Sal ahora mismo, da la cara!","It's you, you son of a bitch! You killed Jerry! Come out right now, show your face!"
+0,,1,A,,,"¡Espera Torres, no seas inconsciente! ¡Debe haber una manera de detener todo esto!","Wait Torres, don't be stupid! There's got to be a way to stop all this!"

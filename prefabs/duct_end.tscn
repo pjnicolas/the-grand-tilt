@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cy20f6v1gkcu"]
+
+[ext_resource type="Texture2D" uid="uid://dscpuw6ydup8f" path="res://sprites/screens/vents/vent_back.png" id="1_q0wba"]
+
+[node name="DuctEnd" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2.7931, 2.7931)
+texture = ExtResource("1_q0wba")
+centered = false

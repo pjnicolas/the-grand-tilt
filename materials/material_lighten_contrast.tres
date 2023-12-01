@@ -1,0 +1,6 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://bvwydqbd3iivq"]
+
+[ext_resource type="Shader" uid="uid://0p8f2v2ei7ku" path="res://materials/shader_lighten_contrast.tres" id="1_aferc"]
+
+[resource]
+shader = ExtResource("1_aferc")
